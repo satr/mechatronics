@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="490" viewBox="0 0 760 490" role="img" aria-labelledby="title desc">
+<title id="title">Forward kinematics of a two-link planar arm</title><desc id="desc">Geometrically scaled first link 100 mm at 30 degrees from world X, second link 50 mm at relative 60 degrees, so second absolute direction 90 degrees. Tip at (86.60 mm,100 mm).</desc>
+<rect width="760" height="490" fill="#f8fafc" rx="20"/>
+<style>text{font-family:Arial,sans-serif;fill:#1e293b}.h{font-size:25px;font-weight:700}.sm{font-size:16px}.tiny{font-size:14px}.lg{font-size:19px;font-weight:600}.axis{stroke:#475569;stroke-width:2}.guide{stroke:#94a3b8;stroke-width:1.5;stroke-dasharray:6 6}</style>
+
+<text x="32" y="42" class="h">Two-link forward kinematics</text>
+<text x="32" y="71" class="sm">L1 = 100 mm, L2 = 50 mm; θ1 = +30°, θ2 = +60° relative</text>
+<path d="M 85 400 H 660 M 85 425 V 84" class="axis" fill="none"/>
+<path d="M 660 400 l -12 -7 v 14 Z M 85 84 l -7 12 h 14 Z" fill="#475569"/>
+<text x="670" y="406" class="sm">X</text><text x="76" y="79" class="sm">Y</text>
+<path d="M 85 400 L 292.85 280.00" stroke="#0d9488" stroke-width="8" stroke-linecap="round" fill="none"/>
+<path d="M 292.85 280.00 V 160.00" stroke="#d97706" stroke-width="8" stroke-linecap="round" fill="none"/>
+<path d="M 292.85 160.00 V 400 M 85 160.00 H 292.85" class="guide" fill="none"/>
+<path d="M 292.85 280.00 l 85 -49" stroke="#94a3b8" stroke-dasharray="5 5" stroke-width="2" fill="none"/>
+<circle cx="85" cy="400" r="7" fill="#475569"/><circle cx="292.85" cy="280.00" r="8" fill="#0d9488" stroke="#fff" stroke-width="2"/><circle cx="292.85" cy="160.00" r="8" fill="#d97706" stroke="#fff" stroke-width="2"/>
+<path d="M 144 400 A 59 59 0 0 0 136.1 370.5" stroke="#0d9488" stroke-width="3" fill="none"/>
+<text x="150" y="383" class="sm">θ1=30°</text>
+<path d="M 340.45 252.50 A 55 55 0 0 0 292.85 225.00" stroke="#d97706" stroke-width="3" fill="none"/>
+<text x="349.85" y="214.00" class="sm">θ2=60°</text>
+<text x="144" y="304" class="lg">L1 = 100 mm</text>
+<text x="304.85" y="220.00" class="lg">L2 = 50 mm</text>
+<text x="310.85" y="150.00" class="lg">Tool (86.60,100) mm</text>
+<text x="38" y="447" class="sm">O (0,0)</text>
+<text x="32" y="475" class="tiny">The second link's absolute angle is θ1 + θ2 = 90°.</text>
+
+</svg>

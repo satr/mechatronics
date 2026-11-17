@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!-- Synthetic teaching geometry only: no actuators, dynamics, collision or safety model. -->
+<robot name="virtual_arm">
+  <link name="base_link"/>
+  <link name="arm_link"/>
+  <link name="tool"/>
+
+  <joint name="joint_1" type="revolute">
+    <parent link="base_link"/>
+    <child link="arm_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="1.0" velocity="1.0"/>
+  </joint>
+  <joint name="tool_mount" type="fixed">
+    <parent link="arm_link"/>
+    <child link="tool"/>
+    <origin xyz="0.2 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <ros2_control name="VirtualArm" type="system">
+    <hardware>
+      <plugin>mock_components/GenericSystem</plugin>
+    </hardware>
+    <joint name="joint_1">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+  </ros2_control>
+</robot>

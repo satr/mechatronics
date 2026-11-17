@@ -1,0 +1,41 @@
+name: ROS 2 live Docker smoke test
+# Only trusted main runs the host Docker daemon and repository shell script.
+# Untrusted pull requests must not execute their Dockerfile/shell on the host.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ros2/**'
+      - '.github/workflows/ros2-live-smoke.yml'
+  workflow_dispatch:
+jobs:
+  live-docker-smoke:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7; verified 2026-11-14
+        with:
+          persist-credentials: false
+      - name: Verify Docker Compose
+        run: docker compose version
+      - name: Exercise real ROS 2 topic and service
+        run: bash ros2/smoke_test.sh
+      - name: Exercise headless ros2_control position feedback and TF2
+        run: bash ros2/control_lab/smoke_test.sh
+      - name: Exercise official ROS image without Compose or custom Dockerfile
+        run: bash ros2/plain_docker_smoke.sh
+      - name: Print diagnostics after failure
+        if: failure()
+        run: |
+          docker compose -f ros2/compose.yaml ps || true
+          docker compose -f ros2/compose.yaml logs --tail=100 demo || true
+          docker logs --tail=100 ros || true
+      - name: Stop and remove the lab
+        if: always()
+        run: |
+          docker compose -f ros2/compose.yaml down --remove-orphans
+          docker rm -f ros 2>/dev/null || true

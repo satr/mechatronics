@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="500" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+<title id="title">Law of cosines for a two-link planar robot</title>
+<desc id="desc">To scale: base O, elbow A, tool B. OA 100 mm, AB 50 mm, direct distance OB 120 mm. Internal angle phi 100.95 degrees, relative elbow angle theta2 negative 79.05 degrees. Cosine theta2 equals 0.19.</desc>
+<rect width="760" height="500" rx="20" fill="#f8fafc"/>
+<text x="35" y="53" font-family="Arial,sans-serif" font-size="27" font-weight="bold" fill="#17212d">Law of cosines / Two-link arm</text>
+<text x="35" y="85" font-family="Arial,sans-serif" font-size="16" fill="#51606d">True-to-scale links • one elbow configuration</text>
+<path d="M 85 324 L 367.88 197.19 L 457 324 Z" fill="#e5f4ff" fill-opacity=".65"/>
+<path d="M 85 324 L 367.88 197.19" stroke="#0b8e7a" stroke-width="8" stroke-linecap="round"/>
+<path d="M 367.88 197.19 L 457 324" stroke="#d97706" stroke-width="8" stroke-linecap="round"/>
+<path d="M 85 324 L 457 324" stroke="#285eb2" stroke-width="4" stroke-dasharray="10 7"/>
+<line x1="367.88" y1="197.19" x2="422.63" y2="172.64" stroke="#8d79b5" stroke-width="2" stroke-dasharray="5 5"/>
+<path d="M 386.85 224.19 A 33 33 0 0 1 337.76 210.69" fill="none" stroke="#8b5cf6" stroke-width="3"/>
+<path d="M 418.06 174.69 A 55 55 0 0 1 399.5 242.18" fill="none" stroke="#df5591" stroke-width="3"/>
+<circle cx="85" cy="324" r="7" fill="#123642"/><circle cx="367.88" cy="197.19" r="7" fill="#123642" stroke="#fff" stroke-width="2"/><circle cx="457" cy="324" r="7" fill="#123642"/>
+<g font-family="Arial,sans-serif" font-size="18" fill="#17212d">
+<text x="63" y="351" font-weight="bold">O</text><text x="359.88" y="177.19" font-weight="bold">A</text><text x="469" y="332" font-weight="bold">B</text>
+<text x="183" y="230" fill="#0b806d">L₁ = 100 mm</text><text x="499" y="267" fill="#b45e06">L₂ = 50 mm</text><text x="229" y="352" fill="#285eb2">r = 120 mm</text>
+<text x="334.88" y="249.19" fill="#7c3aed">φ</text><text x="431.88" y="215.19" fill="#b52e6e">θ₂</text>
+</g>
+<g font-family="Arial,sans-serif" font-size="19" fill="#17212d">
+<text x="35" y="418">φ = 180° − |θ₂| ≈ 100.95°</text>
+<text x="35" y="448">r² = L₁² + L₂² − 2L₁L₂ cosφ</text>
+<text x="35" y="479">cosθ₂ = (r² − L₁² − L₂²) / (2L₁L₂) = 0.19</text>
+</g>
+</svg>

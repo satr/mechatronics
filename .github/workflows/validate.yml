@@ -1,0 +1,36 @@
+name: Validate public educational content
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout source (do not run PR Python on host)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7; verified 2026-11-14
+        with:
+          persist-credentials: false
+      - name: Validate inside a network-disabled non-root container
+        shell: bash
+        run: |
+          # Official Python image, but its tag is mutable; review upstream updates.
+          # No credentials, secrets, Docker socket or host network are passed in.
+          docker run --rm \
+            --network none \
+            --read-only \
+            --cap-drop ALL \
+            --security-opt no-new-privileges \
+            --pids-limit 128 \
+            --memory 1g \
+            --cpus 2 \
+            --user 65534:65534 \
+            --tmpfs /tmp:rw,nosuid,noexec,size=64m \
+            --mount "type=bind,src=${GITHUB_WORKSPACE},dst=/workspace,readonly" \
+            --workdir /workspace \
+            --env PYTHONDONTWRITEBYTECODE=1 \
+            python:3.11-slim-bookworm \
+            /bin/sh -ec 'python3 tools/check_executable_sources.py && python3 -m unittest discover -s tests -v && python3 tools/validate_repository.py'

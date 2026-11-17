@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="490" viewBox="0 0 760 490" role="img" aria-labelledby="title desc">
+<title id="title">World frame and rotated local tool frame</title><desc id="desc">World axes W, tool origin at world (100 mm,50 mm) rotated 90 degrees counterclockwise. Local positive x points world positive Y, local positive y points world negative X. Point P local (0,10) is world (90,50); Q local (20,0) is world (100,70).</desc>
+<rect width="760" height="490" fill="#f8fafc" rx="20"/>
+<style>text{font-family:Arial,sans-serif;fill:#1e293b}.h{font-size:25px;font-weight:700}.sm{font-size:16px}.tiny{font-size:14px}.lg{font-size:19px;font-weight:600}.axis{stroke:#475569;stroke-width:2}.guide{stroke:#94a3b8;stroke-width:1.5;stroke-dasharray:6 6}</style>
+
+<text x="32" y="42" class="h">World and tool coordinate frames</text>
+<text x="32" y="71" class="sm">2D example: tool T at (100, 50) mm, rotated +90°</text>
+<path class="guide" d="M 80 240 L 380 240 L 380 390" fill="none"/>
+<path d="M 55 390 H 680" class="axis" fill="none"/><path d="M 80 430 V 90" class="axis" fill="none"/>
+<path d="M 680 390 l -12 -7 v 14 Z M 80 90 l -7 12 h 14 Z" fill="#475569"/>
+<text x="686" y="397" class="sm">Xw</text><text x="69" y="86" class="sm">Yw</text>
+<circle cx="80" cy="390" r="6" fill="#475569"/><text x="32" y="414" class="sm">W (0,0)</text>
+<circle cx="380" cy="240" r="7" fill="#0d9488"/>
+<path d="M 380 240 V 94" stroke="#0d9488" stroke-width="5" fill="none"/>
+<path d="M 380 94 l -8 15 h 16 Z" fill="#0d9488"/>
+<path d="M 380 240 H 195" stroke="#d97706" stroke-width="5" fill="none"/>
+<path d="M 195 240 l 16 -8 v 16 Z" fill="#d97706"/>
+<text x="391" y="102" class="lg" fill="#0d9488">+x local</text>
+<text x="130" y="225" class="lg" fill="#d97706">+y local</text>
+<path d="M 423 240 A 43 43 0 0 0 380 197" fill="none" stroke="#7c3aed" stroke-width="3"/>
+<text x="427" y="214" class="sm">+90°</text>
+<text x="403" y="267" class="sm">T (100,50)</text>
+<circle cx="350" cy="240" r="6" fill="#d97706"/>
+<path d="M 350 240 L 288 288" stroke="#d97706" stroke-width="1.5" fill="none"/>
+<text x="181" y="309" class="sm">P local (0,10)</text><text x="181" y="331" class="sm">= world (90,50)</text>
+<circle cx="380" cy="180" r="6" fill="#0d9488"/>
+<text x="396" y="163" class="sm">Q local (20,0)</text><text x="396" y="185" class="sm">= world (100,70)</text>
+<text x="32" y="469" class="tiny">Scale: 3 px/mm; positive angles counterclockwise. Axes and coordinates are geometrically consistent.</text>
+
+</svg>

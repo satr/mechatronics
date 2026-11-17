@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="600" viewBox="0 0 940 600" role="img" aria-labelledby="title desc">
+<title id="title">ROS 2 layered software architecture and hardware boundary</title>
+<desc id="desc">Application nodes communicate through typed ROS interfaces over RMW and DDS transport. tf2 uses coordinate transforms, URDF describes a robot model. ros2_control interfaces bridge application controllers to separately engineered low-level devices.</desc>
+<rect width="940" height="600" fill="#fff"/>
+<text x="35" y="42" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="bold" fill="#0f172a">ROS 2 software layers</text>
+<text x="35" y="69" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#475569">Logical architecture, not a deterministic execution timeline</text>
+<rect x="35" y="100" width="870" height="136" rx="16" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+<text x="55" y="130" font-family="Arial,Helvetica,sans-serif" font-size="19" fill="#334155" font-weight="bold">Application nodes / processes</text>
+<rect x="55" y="149" width="190" height="62" rx="10" fill="#dbeafe" stroke="#3b82f6"/>
+<text x="70" y="175" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#1e40af">Sensors / simulated</text>
+<text x="70" y="194" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#1e40af">publishers</text>
+<rect x="273" y="149" width="190" height="62" rx="10" fill="#dbeafe" stroke="#3b82f6"/>
+<text x="288" y="175" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#1e40af">Localization</text>
+<text x="288" y="194" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#1e40af">planning algorithms</text>
+<rect x="491" y="149" width="190" height="62" rx="10" fill="#dbeafe" stroke="#3b82f6"/>
+<text x="506" y="175" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#1e40af">Controller nodes</text>
+<text x="506" y="194" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#1e40af">application logic</text>
+<rect x="708" y="149" width="177" height="62" rx="10" fill="#e0f2fe" stroke="#0284c7"/>
+<text x="722" y="175" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#0369a1">tf2 / URDF</text>
+<text x="722" y="194" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#0369a1">frames / model</text>
+<path d="M470 236 V268" stroke="#64748b" stroke-width="3"/>
+<path d="M470 269 l-9 -12 h18 z" fill="#64748b"/>
+<rect x="65" y="274" width="810" height="77" rx="12" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+<text x="100" y="305" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="bold" fill="#155e75">ROS interfaces: typed topics · services · actions · parameters</text>
+<text x="100" y="330" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#155e75">RMW abstraction / DDS discovery and data transport / QoS</text>
+<path d="M470 351 V389" stroke="#64748b" stroke-width="3"/>
+<path d="M470 390 l-9 -12 h18 z" fill="#64748b"/>
+<rect x="200" y="395" width="540" height="72" rx="12" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+<text x="226" y="426" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="bold" fill="#166534">ros2_control / state and command interfaces</text>
+<text x="226" y="450" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#166534">Controller manager + hardware interface abstraction</text>
+<path d="M470 468 V508" stroke="#b45309" stroke-width="3"/>
+<path d="M470 509 l-9 -12 h18 z" fill="#b45309"/>
+<rect x="65" y="514" width="810" height="65" rx="12" fill="#fff7ed" stroke="#d97706" stroke-width="2"/>
+<text x="85" y="542" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="bold" fill="#9a3412">Hardware / low-level timing / independent safety measures</text>
+<text x="85" y="564" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#9a3412">Not implemented or controlled by the synthetic Docker lab</text>
+</svg>

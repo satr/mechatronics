@@ -1,0 +1,8 @@
+# Optional third-party dependencies. Basic Python exercises support Python 3.10+.
+# NumPy is available on 3.10; plotting and notebooks require Python 3.11+
+# because auditing their transitive dependencies on 3.10 found vulnerabilities.
+# Environment markers select the latest supported versions per Python.
+numpy>=1.26,<3; python_version < "3.12"
+numpy>=2.5.4,<3; python_version >= "3.12"
+matplotlib>=3.11.2,<4; python_version >= "3.11"
+jupyterlab>=4.6.6,<5; python_version >= "3.11"

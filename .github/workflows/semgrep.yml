@@ -1,0 +1,59 @@
+name: SAST Security Analysis (Semgrep)
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  semgrep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.11"
+
+      - name: Install maintained Semgrep CLI
+        run: python -m pip install --disable-pip-version-check "semgrep==1.185.0"
+
+      - name: Scan repository and generate SARIF
+        id: scan
+        # Keep the report even when Semgrep reports a finding; fail at the end.
+        continue-on-error: true
+        env:
+          SEMGREP_SEND_METRICS: "off"
+        run: semgrep scan --config p/python --config p/security-audit --sarif --output semgrep.sarif --error .
+
+      - name: Preserve SARIF report while private
+        if: always() && steps.scan.outcome != 'skipped'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: semgrep-sarif
+          path: semgrep.sarif
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Upload SARIF when code scanning is available
+        if: ${{ !github.event.repository.private && (github.event_name != 'pull_request' || !github.event.pull_request.head.repo.fork) && steps.scan.outcome != 'skipped' }}
+        uses: github/codeql-action/upload-sarif@33d7b85da1a04171e211befe2c739303b9a4c066 # v4.39.3
+        with:
+          sarif_file: semgrep.sarif
+
+      - name: Fail if Semgrep found issues or could not scan
+        if: steps.scan.outcome == 'failure'
+        run: |
+          echo "Semgrep reported findings or an execution error. Review semgrep-sarif." >&2
+          exit 1

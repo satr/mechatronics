@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1295" viewBox="0 0 1500 1295" role="img" aria-labelledby="title desc">
+<title id="title">Unit circle — 16 independent sine and cosine reference labels</title>
+<desc id="desc">One unit circle with a distinct two-line sine/cosine label connected to each of the 16 common angles. Each function has an exact signed fractional value and a four-decimal approximation.</desc>
+<style>
+  .heading{font:700 28px Arial,Helvetica,sans-serif;fill:#0f172a}
+  .hint{font:17px Arial,Helvetica,sans-serif;fill:#475569}
+  .axis{stroke:#94a3b8;stroke-width:1.8}
+  .card{fill:#fff;stroke:#cbd5e1;stroke-width:1.4}
+  .angle{font:700 22px Arial,Helvetica,sans-serif;fill:#0f172a}
+  .cos{font:18px Arial,Helvetica,sans-serif;fill:#0f766e}
+  .sin{font:18px Arial,Helvetica,sans-serif;fill:#1d4ed8}
+  .leader{fill:none;stroke:#64748b;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+  .tick{fill:#0f172a}
+</style>
+<rect width="1500" height="1295" fill="#f8fafc"/>
+<text class="heading" x="750" y="39" text-anchor="middle">Unit circle: 16 angles — sin and cos</text>
+<text class="hint" x="750" y="69" text-anchor="middle">Each angle has its own exact value and decimal approximation</text>
+<circle cx="750" cy="669" r="295" fill="white" stroke="#334155" stroke-width="2.5"/>
+<line class="axis" x1="427" y1="669" x2="1073" y2="669"/>
+<line class="axis" x1="750" y1="346" x2="750" y2="992"/>
+<text class="hint" x="1078" y="659">+X</text>
+<text class="hint" x="762" y="346">+Y</text>
+<text class="hint" x="730" y="692">O</text>
+<text class="hint" x="931" y="524" font-size="16">I</text>
+<text class="hint" x="562" y="524" font-size="16">II</text>
+<text class="hint" x="562" y="829" font-size="16">III</text>
+<text class="hint" x="931" y="829" font-size="16">IV</text>
+<line x1="750" y1="669" x2="958.60" y2="460.40" stroke="#d97706" stroke-width="3"/>
+<line x1="750" y1="669" x2="958.60" y2="669" stroke="#0f766e" stroke-width="2.4" stroke-dasharray="7 6"/>
+<line x1="958.60" y1="669" x2="958.60" y2="460.40" stroke="#1d4ed8" stroke-width="2.4" stroke-dasharray="7 6"/>
+<text x="840" y="695" class="cos">cos θ</text>
+<text x="965.5965004500315" y="581" class="sin">sin θ</text>
+<polyline class="leader" points="1045.00,669.00 1070.00,669.00 1092.00,646.00"/>
+<polyline class="leader" points="1005.48,521.50 1030.48,521.50 1092.00,540.00"/>
+<polyline class="leader" points="958.60,460.40 983.60,460.40 1092.00,434.00"/>
+<polyline class="leader" points="897.50,413.52 922.50,413.52 1092.00,328.00"/>
+<polyline class="leader" points="750.00,374.00 750.00,346.00 750.00,201.00"/>
+<polyline class="leader" points="602.50,413.52 577.50,413.52 408.00,328.00"/>
+<polyline class="leader" points="541.40,460.40 516.40,460.40 408.00,434.00"/>
+<polyline class="leader" points="494.52,521.50 469.52,521.50 408.00,540.00"/>
+<polyline class="leader" points="455.00,669.00 430.00,669.00 408.00,646.00"/>
+<polyline class="leader" points="494.52,816.50 469.52,816.50 408.00,752.00"/>
+<polyline class="leader" points="541.40,877.60 516.40,877.60 408.00,858.00"/>
+<polyline class="leader" points="602.50,924.48 577.50,924.48 408.00,964.00"/>
+<polyline class="leader" points="750.00,964.00 750.00,992.00 750.00,1144.00"/>
+<polyline class="leader" points="897.50,924.48 922.50,924.48 1092.00,964.00"/>
+<polyline class="leader" points="958.60,877.60 983.60,877.60 1092.00,858.00"/>
+<polyline class="leader" points="1005.48,816.50 1030.48,816.50 1092.00,752.00"/>
+<circle class="tick" cx="1045.00" cy="669.00" r="5.6"/>
+<circle class="tick" cx="1005.48" cy="521.50" r="4.5"/>
+<circle class="tick" cx="958.60" cy="460.40" r="4.5"/>
+<circle class="tick" cx="897.50" cy="413.52" r="4.5"/>
+<circle class="tick" cx="750.00" cy="374.00" r="5.6"/>
+<circle class="tick" cx="602.50" cy="413.52" r="4.5"/>
+<circle class="tick" cx="541.40" cy="460.40" r="4.5"/>
+<circle class="tick" cx="494.52" cy="521.50" r="4.5"/>
+<circle class="tick" cx="455.00" cy="669.00" r="5.6"/>
+<circle class="tick" cx="494.52" cy="816.50" r="4.5"/>
+<circle class="tick" cx="541.40" cy="877.60" r="4.5"/>
+<circle class="tick" cx="602.50" cy="924.48" r="4.5"/>
+<circle class="tick" cx="750.00" cy="964.00" r="5.6"/>
+<circle class="tick" cx="897.50" cy="924.48" r="4.5"/>
+<circle class="tick" cx="958.60" cy="877.60" r="4.5"/>
+<circle class="tick" cx="1005.48" cy="816.50" r="4.5"/>
+<g class="angle-card" data-angle="0" data-cos-exact="1" data-sin-exact="0" data-cos-decimal="1.0000" data-sin-decimal="0.0000" aria-label="0 degrees, cosine 1 approximately 1.0000, sine 0 approximately 0.0000">
+<title>0°: cos = 1 ≈ 1.0000; sin = 0 ≈ 0.0000</title>
+<rect class="card" x="1092" y="599" width="386" height="94" rx="10"/>
+<text class="angle" x="1108" y="626">0°</text>
+<text class="cos" x="1108" y="655">cos = 1 ≈ 1.0000</text>
+<text class="sin" x="1108" y="680">sin = 0 ≈ 0.0000</text>
+</g>
+<g class="angle-card" data-angle="30" data-cos-exact="√3/2" data-sin-exact="1/2" data-cos-decimal="0.8660" data-sin-decimal="0.5000" aria-label="30 degrees, cosine √3/2 approximately 0.8660, sine 1/2 approximately 0.5000">
+<title>30°: cos = √3/2 ≈ 0.8660; sin = 1/2 ≈ 0.5000</title>
+<rect class="card" x="1092" y="493" width="386" height="94" rx="10"/>
+<text class="angle" x="1108" y="520">30°</text>
+<text class="cos" x="1108" y="549">cos = √3/2 ≈ 0.8660</text>
+<text class="sin" x="1108" y="574">sin = 1/2 ≈ 0.5000</text>
+</g>
+<g class="angle-card" data-angle="45" data-cos-exact="√2/2" data-sin-exact="√2/2" data-cos-decimal="0.7071" data-sin-decimal="0.7071" aria-label="45 degrees, cosine √2/2 approximately 0.7071, sine √2/2 approximately 0.7071">
+<title>45°: cos = √2/2 ≈ 0.7071; sin = √2/2 ≈ 0.7071</title>
+<rect class="card" x="1092" y="387" width="386" height="94" rx="10"/>
+<text class="angle" x="1108" y="414">45°</text>
+<text class="cos" x="1108" y="443">cos = √2/2 ≈ 0.7071</text>
+<text class="sin" x="1108" y="468">sin = √2/2 ≈ 0.7071</text>
+</g>
+<g class="angle-card" data-angle="60" data-cos-exact="1/2" data-sin-exact="√3/2" data-cos-decimal="0.5000" data-sin-decimal="0.8660" aria-label="60 degrees, cosine 1/2 approximately 0.5000, sine √3/2 approximately 0.8660">
+<title>60°: cos = 1/2 ≈ 0.5000; sin = √3/2 ≈ 0.8660</title>
+<rect class="card" x="1092" y="281" width="386" height="94" rx="10"/>
+<text class="angle" x="1108" y="308">60°</text>
+<text class="cos" x="1108" y="337">cos = 1/2 ≈ 0.5000</text>
+<text class="sin" x="1108" y="362">sin = √3/2 ≈ 0.8660</text>
+</g>
+<g class="angle-card" data-angle="90" data-cos-exact="0" data-sin-exact="1" data-cos-decimal="0.0000" data-sin-decimal="1.0000" aria-label="90 degrees, cosine 0 approximately 0.0000, sine 1 approximately 1.0000">
+<title>90°: cos = 0 ≈ 0.0000; sin = 1 ≈ 1.0000</title>
+<rect class="card" x="557" y="107" width="386" height="94" rx="10"/>
+<text class="angle" x="573" y="134">90°</text>
+<text class="cos" x="573" y="163">cos = 0 ≈ 0.0000</text>
+<text class="sin" x="573" y="188">sin = 1 ≈ 1.0000</text>
+</g>
+<g class="angle-card" data-angle="120" data-cos-exact="−1/2" data-sin-exact="√3/2" data-cos-decimal="-0.5000" data-sin-decimal="0.8660" aria-label="120 degrees, cosine −1/2 approximately -0.5000, sine √3/2 approximately 0.8660">
+<title>120°: cos = −1/2 ≈ -0.5000; sin = √3/2 ≈ 0.8660</title>
+<rect class="card" x="22" y="281" width="386" height="94" rx="10"/>
+<text class="angle" x="38" y="308">120°</text>
+<text class="cos" x="38" y="337">cos = −1/2 ≈ -0.5000</text>
+<text class="sin" x="38" y="362">sin = √3/2 ≈ 0.8660</text>
+</g>
+<g class="angle-card" data-angle="135" data-cos-exact="−√2/2" data-sin-exact="√2/2" data-cos-decimal="-0.7071" data-sin-decimal="0.7071" aria-label="135 degrees, cosine −√2/2 approximately -0.7071, sine √2/2 approximately 0.7071">
+<title>135°: cos = −√2/2 ≈ -0.7071; sin = √2/2 ≈ 0.7071</title>
+<rect class="card" x="22" y="387" width="386" height="94" rx="10"/>
+<text class="angle" x="38" y="414">135°</text>
+<text class="cos" x="38" y="443">cos = −√2/2 ≈ -0.7071</text>
+<text class="sin" x="38" y="468">sin = √2/2 ≈ 0.7071</text>
+</g>
+<g class="angle-card" data-angle="150" data-cos-exact="−√3/2" data-sin-exact="1/2" data-cos-decimal="-0.8660" data-sin-decimal="0.5000" aria-label="150 degrees, cosine −√3/2 approximately -0.8660, sine 1/2 approximately 0.5000">
+<title>150°: cos = −√3/2 ≈ -0.8660; sin = 1/2 ≈ 0.5000</title>
+<rect class="card" x="22" y="493" width="386" height="94" rx="10"/>
+<text class="angle" x="38" y="520">150°</text>
+<text class="cos" x="38" y="549">cos = −√3/2 ≈ -0.8660</text>
+<text class="sin" x="38" y="574">sin = 1/2 ≈ 0.5000</text>
+</g>
+<g class="angle-card" data-angle="180" data-cos-exact="−1" data-sin-exact="0" data-cos-decimal="-1.0000" data-sin-decimal="0.0000" aria-label="180 degrees, cosine −1 approximately -1.0000, sine 0 approximately 0.0000">
+<title>180°: cos = −1 ≈ -1.0000; sin = 0 ≈ 0.0000</title>
+<rect class="card" x="22" y="599" width="386" height="94" rx="10"/>
+<text class="angle" x="38" y="626">180°</text>
+<text class="cos" x="38" y="655">cos = −1 ≈ -1.0000</text>
+<text class="sin" x="38" y="680">sin = 0 ≈ 0.0000</text>
+</g>
+<g class="angle-card" data-angle="210" data-cos-exact="−√3/2" data-sin-exact="−1/2" data-cos-decimal="-0.8660" data-sin-decimal="-0.5000" aria-label="210 degrees, cosine −√3/2 approximately -0.8660, sine −1/2 approximately -0.5000">
+<title>210°: cos = −√3/2 ≈ -0.8660; sin = −1/2 ≈ -0.5000</title>
+<rect class="card" x="22" y="705" width="386" height="94" rx="10"/>
+<text class="angle" x="38" y="732">210°</text>
+<text class="cos" x="38" y="761">cos = −√3/2 ≈ -0.8660</text>
+<text class="sin" x="38" y="786">sin = −1/2 ≈ -0.5000</text>
+</g>
+<g class="angle-card" data-angle="225" data-cos-exact="−√2/2" data-sin-exact="−√2/2" data-cos-decimal="-0.7071" data-sin-decimal="-0.7071" aria-label="225 degrees, cosine −√2/2 approximately -0.7071, sine −√2/2 approximately -0.7071">
+<title>225°: cos = −√2/2 ≈ -0.7071; sin = −√2/2 ≈ -0.7071</title>
+<rect class="card" x="22" y="811" width="386" height="94" rx="10"/>
+<text class="angle" x="38" y="838">225°</text>
+<text class="cos" x="38" y="867">cos = −√2/2 ≈ -0.7071</text>
+<text class="sin" x="38" y="892">sin = −√2/2 ≈ -0.7071</text>
+</g>
+<g class="angle-card" data-angle="240" data-cos-exact="−1/2" data-sin-exact="−√3/2" data-cos-decimal="-0.5000" data-sin-decimal="-0.8660" aria-label="240 degrees, cosine −1/2 approximately -0.5000, sine −√3/2 approximately -0.8660">
+<title>240°: cos = −1/2 ≈ -0.5000; sin = −√3/2 ≈ -0.8660</title>
+<rect class="card" x="22" y="917" width="386" height="94" rx="10"/>
+<text class="angle" x="38" y="944">240°</text>
+<text class="cos" x="38" y="973">cos = −1/2 ≈ -0.5000</text>
+<text class="sin" x="38" y="998">sin = −√3/2 ≈ -0.8660</text>
+</g>
+<g class="angle-card" data-angle="270" data-cos-exact="0" data-sin-exact="−1" data-cos-decimal="0.0000" data-sin-decimal="-1.0000" aria-label="270 degrees, cosine 0 approximately 0.0000, sine −1 approximately -1.0000">
+<title>270°: cos = 0 ≈ 0.0000; sin = −1 ≈ -1.0000</title>
+<rect class="card" x="557" y="1144" width="386" height="94" rx="10"/>
+<text class="angle" x="573" y="1171">270°</text>
+<text class="cos" x="573" y="1200">cos = 0 ≈ 0.0000</text>
+<text class="sin" x="573" y="1225">sin = −1 ≈ -1.0000</text>
+</g>
+<g class="angle-card" data-angle="300" data-cos-exact="1/2" data-sin-exact="−√3/2" data-cos-decimal="0.5000" data-sin-decimal="-0.8660" aria-label="300 degrees, cosine 1/2 approximately 0.5000, sine −√3/2 approximately -0.8660">
+<title>300°: cos = 1/2 ≈ 0.5000; sin = −√3/2 ≈ -0.8660</title>
+<rect class="card" x="1092" y="917" width="386" height="94" rx="10"/>
+<text class="angle" x="1108" y="944">300°</text>
+<text class="cos" x="1108" y="973">cos = 1/2 ≈ 0.5000</text>
+<text class="sin" x="1108" y="998">sin = −√3/2 ≈ -0.8660</text>
+</g>
+<g class="angle-card" data-angle="315" data-cos-exact="√2/2" data-sin-exact="−√2/2" data-cos-decimal="0.7071" data-sin-decimal="-0.7071" aria-label="315 degrees, cosine √2/2 approximately 0.7071, sine −√2/2 approximately -0.7071">
+<title>315°: cos = √2/2 ≈ 0.7071; sin = −√2/2 ≈ -0.7071</title>
+<rect class="card" x="1092" y="811" width="386" height="94" rx="10"/>
+<text class="angle" x="1108" y="838">315°</text>
+<text class="cos" x="1108" y="867">cos = √2/2 ≈ 0.7071</text>
+<text class="sin" x="1108" y="892">sin = −√2/2 ≈ -0.7071</text>
+</g>
+<g class="angle-card" data-angle="330" data-cos-exact="√3/2" data-sin-exact="−1/2" data-cos-decimal="0.8660" data-sin-decimal="-0.5000" aria-label="330 degrees, cosine √3/2 approximately 0.8660, sine −1/2 approximately -0.5000">
+<title>330°: cos = √3/2 ≈ 0.8660; sin = −1/2 ≈ -0.5000</title>
+<rect class="card" x="1092" y="705" width="386" height="94" rx="10"/>
+<text class="angle" x="1108" y="732">330°</text>
+<text class="cos" x="1108" y="761">cos = √3/2 ≈ 0.8660</text>
+<text class="sin" x="1108" y="786">sin = −1/2 ≈ -0.5000</text>
+</g>
+<text x="750" y="1270" class="hint" text-anchor="middle">Angles from +X, counterclockwise. Decimal values rounded to four places.</text>
+</svg>

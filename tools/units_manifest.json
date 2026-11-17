@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "pages": {
+    "CHEATSHEET.md": [
+      "s",
+      "m",
+      "m/s",
+      "rad/s",
+      "kg·m²",
+      "N·m",
+      "N·m·s/rad",
+      "J",
+      "mm",
+      "mm/s",
+      "%"
+    ],
+    "TRIGONOMETRY.md": [
+      "°",
+      "rad",
+      "kg",
+      "m",
+      "m/s²",
+      "N·m",
+      "mm",
+      "N"
+    ],
+    "INTEGRAL_TABLE.md": [
+      "s",
+      "mm",
+      "mm/s",
+      "mm/s²",
+      "N",
+      "m",
+      "N/m",
+      "J"
+    ],
+    "DERIVATIVE_TABLE.md": [
+      "s",
+      "mm",
+      "mm/s",
+      "mm/s²"
+    ],
+    "SYMBOLS.md": [
+      "s",
+      "mm",
+      "mm/s",
+      "kg·m²",
+      "N·m",
+      "N·m·s/rad",
+      "rpm",
+      "rad/s",
+      "%"
+    ],
+    "notes/00-calculus-foundations.md": [
+      "s",
+      "mm",
+      "mm/s",
+      "mm/s²",
+      "kg·m²",
+      "rad/s",
+      "rad/s²",
+      "N·m",
+      "W",
+      "rpm",
+      "N/m",
+      "mm³/s",
+      "%",
+      "m",
+      "kg",
+      "N",
+      "J",
+      "rad"
+    ],
+    "notes/01-motion-calculus.md": [
+      "s",
+      "mm",
+      "mm/s",
+      "mm/s²",
+      "%"
+    ],
+    "notes/02-first-order-dynamics.md": [
+      "s",
+      "mm/s",
+      "kg",
+      "m",
+      "rad/s",
+      "N",
+      "N·m",
+      "J",
+      "rpm",
+      "kg·m²",
+      "N·m·s/rad",
+      "%",
+      "rad"
+    ],
+    "notes/03-feedback-control.md": [
+      "rpm",
+      "A",
+      "s",
+      "rpm/s",
+      "A/rpm",
+      "A/(rpm·s)",
+      "A·s/rpm",
+      "N·m",
+      "kg",
+      "m",
+      "N"
+    ],
+    "notes/04-coordinate-frames.md": [
+      "mm",
+      "°"
+    ],
+    "notes/05-velocity-jacobian.md": [
+      "mm",
+      "mm/s",
+      "rad",
+      "rad/s",
+      "mm/rad",
+      "°"
+    ],
+    "notes/06-ros2-foundations.md": [
+      "m",
+      "s"
+    ]
+  },
+  "locales": {
+    "en": {
+      "label": "Units used here (defined before the examples)",
+      "link": "Full unit reference",
+      "lang": "Languages",
+      "index": "Course index",
+      "symbols": "Mathematical symbols",
+      "conversion": "Conversions and physical meaning"
+    },
+    "fr": {
+      "label": "Unités utilisées ici (définies avant les exemples)",
+      "link": "Glossaire des unités",
+      "lang": "Langues",
+      "index": "Sommaire du cours",
+      "symbols": "Symboles mathématiques",
+      "conversion": "Conversions et sens physique"
+    },
+    "de": {
+      "label": "Hier verwendete Einheiten (vor den Beispielen erklärt)",
+      "link": "Einheitenverzeichnis",
+      "lang": "Sprachen",
+      "index": "Kursübersicht",
+      "symbols": "Mathematische Symbole",
+      "conversion": "Umrechnungen und physikalische Bedeutung"
+    },
+    "it": {
+      "label": "Unità usate qui (spiegate prima degli esempi)",
+      "link": "Glossario delle unità",
+      "lang": "Lingue",
+      "index": "Indice del corso",
+      "symbols": "Simboli matematici",
+      "conversion": "Conversioni e significato fisico"
+    },
+    "es": {
+      "label": "Unidades empleadas aquí (definidas antes de los ejemplos)",
+      "link": "Glosario de unidades",
+      "lang": "Idiomas",
+      "index": "Índice del curso",
+      "symbols": "Símbolos matemáticos",
+      "conversion": "Conversiones y significado físico"
+    },
+    "pt": {
+      "label": "Unidades aqui utilizadas (explicadas antes dos exemplos)",
+      "link": "Glossário de unidades",
+      "lang": "Idiomas",
+      "index": "Índice do curso",
+      "symbols": "Símbolos matemáticos",
+      "conversion": "Conversões e significado físico"
+    },
+    "zh": {
+      "label": "本页使用的单位（示例前先解释）",
+      "link": "完整单位表",
+      "lang": "语言",
+      "index": "课程目录",
+      "symbols": "数学符号",
+      "conversion": "换算和物理意义"
+    },
+    "ja": {
+      "label": "このページの単位（例の前に説明）",
+      "link": "単位一覧",
+      "lang": "言語",
+      "index": "コース目次",
+      "symbols": "数学記号",
+      "conversion": "換算と物理的意味"
+    },
+    "nb": {
+      "label": "Enheter på denne siden (forklart før eksemplene)",
+      "link": "Enhetsoversikt",
+      "lang": "Språk",
+      "index": "Kursoversikt",
+      "symbols": "Matematiske symboler",
+      "conversion": "Omregninger og fysisk betydning"
+    },
+    "ru": {
+      "label": "Единицы этой темы (объяснены до примеров)",
+      "link": "Полный справочник единиц",
+      "lang": "Языки",
+      "index": "Содержание курса",
+      "symbols": "Математические символы",
+      "conversion": "Пересчёт и физический смысл"
+    },
+    "ko": {
+      "label": "이 페이지의 단위(예제 전에 설명)",
+      "link": "단위 전체 목록",
+      "lang": "언어",
+      "index": "목차",
+      "symbols": "수학 기호",
+      "conversion": "단위 변환과 물리적 의미"
+    },
+    "fi": {
+      "label": "Tämän sivun yksiköt (selitetty ennen esimerkkejä)",
+      "link": "Yksikköluettelo",
+      "lang": "Kielet",
+      "index": "Sisällysluettelo",
+      "symbols": "Matemaattiset symbolit",
+      "conversion": "Muunnokset ja fysikaalinen merkitys"
+    },
+    "pl": {
+      "label": "Jednostki tej lekcji (wyjaśnione przed przykładami)",
+      "link": "Pełny słownik jednostek",
+      "lang": "Języki",
+      "index": "Spis treści",
+      "symbols": "Symbole matematyczne",
+      "conversion": "Przeliczenia i znaczenie fizyczne"
+    }
+  }
+}

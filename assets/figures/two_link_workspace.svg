@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="490" viewBox="0 0 760 490" role="img" aria-labelledby="title desc">
+<title id="title">Reachable workspace of ideal two link arm</title><desc id="desc">Ideal 2D reachable annulus: two links of 100 and 50 mm can reach radial distances between 50 and 150 mm inclusive, assuming no joint limits or collisions.</desc>
+<rect width="760" height="490" fill="#f8fafc" rx="20"/>
+<style>text{font-family:Arial,sans-serif;fill:#1e293b}.h{font-size:25px;font-weight:700}.sm{font-size:16px}.tiny{font-size:14px}.lg{font-size:19px;font-weight:600}.axis{stroke:#475569;stroke-width:2}.guide{stroke:#94a3b8;stroke-width:1.5;stroke-dasharray:6 6}</style>
+
+<text x="32" y="42" class="h">Ideal reachable workspace</text>
+<text x="32" y="73" class="sm">L1 = 100 mm, L2 = 50 mm, freely rotating joints</text>
+<circle cx="345" cy="268" r="166" fill="#99e0cf" fill-opacity=".65" stroke="#0d9488" stroke-width="3"/>
+<circle cx="345" cy="268" r="55.333" fill="#f8fafc" stroke="#d97706" stroke-width="3" stroke-dasharray="6 5"/>
+<path d="M 345 268 H 511" stroke="#0d9488" stroke-width="2" fill="none"/>
+<path d="M 345 268 V 212.667" stroke="#d97706" stroke-width="2" fill="none"/>
+<circle cx="345" cy="268" r="5" fill="#334155"/>
+<text x="512" y="260" class="lg">r max = 150 mm</text>
+<text x="358" y="205" class="lg">r min = 50 mm</text>
+<text x="351" y="289" class="sm">O</text>
+<text x="30" y="452" class="sm">Accessible when: 50 mm ≤ r ≤ 150 mm.</text>
+<text x="30" y="479" class="tiny">Assumes no joint limits, obstacles, collisions or out-of-plane motion.</text>
+
+</svg>

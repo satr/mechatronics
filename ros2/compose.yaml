@@ -1,0 +1,10 @@
+services:
+  demo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      ROS_DOMAIN_ID: "42"
+    # All nodes and CLI sessions run INSIDE the same container.
+    # No host ports, host-network access or privileged devices are required.
+    restart: "no"
