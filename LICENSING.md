@@ -8,6 +8,6 @@ The full license text is in [LICENSE](LICENSE): https://www.apache.org/licenses/
 
 This grant applies only to material for which the respective copyright holder has authority to grant these rights. Third-party text, images, code, data, quotations, and trademarks are not relicensed; any third-party material retains its own applicable terms and attribution requirements. Mathematical facts, equations, and general ideas are not claimed as proprietary.
 
-The repository previously contained notices referencing CC0, CC BY-NC-SA 4.0, and PolyForm Noncommercial 1.0.0. Those notices are superseded for original material offered under this policy going forward. Licenses validly granted to recipients of earlier versions cannot necessarily be revoked retroactively. Any third-party contributions must be reviewed for permission to distribute under Apache-2.0 before they are treated as covered by this policy.
+Any third-party contributions must be reviewed for permission to distribute under Apache-2.0 before they are treated as covered by this policy. This license statement does not override any rights previously granted to recipients of earlier versions.
 
 This policy does not override the safety disclaimer in README.md and is not legal advice.
